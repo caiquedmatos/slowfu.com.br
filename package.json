@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "nodemon build",
     "start": "node index.js"
   },
   "author": "",
