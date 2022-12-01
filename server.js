@@ -19,7 +19,7 @@ const multer = require ("multer")
 const bodyParser = require('body-parser')
 const { json} = require("express/lib/response")
 
-const Rota = 3000;
+const Rota = 2000;
 const port = process.env.Port || Rota;
 
 
@@ -140,7 +140,7 @@ app.get('/', function(req, res){
 })
 
 //Rota de Visualização
-app.get('/posts', function(req, res){
+app.get('/posts', checkNotAuthenticated, function(req, res){
     
     Post.findAll({order:[['id', 'DESC']]}).then(function(posts){
         res.render("posts.ejs", {posts:posts})
