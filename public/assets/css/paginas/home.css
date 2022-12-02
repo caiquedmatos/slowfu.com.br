@@ -140,7 +140,7 @@
     display: flex;
     margin: 24px 0;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 45px 15px;
 }
 
 .btn-post a {

@@ -14,7 +14,6 @@ const Sequelize = require('sequelize')
 const Post = require ('./models/Post')
 const Registro = require('./models/registro_db')
 const path = require ("path")
-const multer = require ("multer")
 
 const bodyParser = require('body-parser')
 const { json} = require("express/lib/response")
@@ -27,24 +26,6 @@ app.set('view engine', 'ejs')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(flash())
-
-const storage = multer.diskStorage({
-    destination: function(req, file, cb){
-        cb(null, "uploads/")
-    },
-    filename: function(req, file, cb)
-    {
-        cb(null, file.originalname + Date.now() + path.extname(file.originalname))
-    }
-})
-
-const upload = multer ({storage})
-
-initializePassport(
-    passport,
-    email => users.find(user =>user.email === email),
-    id => users.find(user => user.id === id)
-)
 
 const users = []
 
@@ -166,10 +147,6 @@ app.get('/quem-somos', (req, res) =>{
 // Rota Blog
 app.get('/blog', (req, res) =>{
     res.render("blog.ejs")
-})
-
-app.post("/upload", upload.single("file"), (req, res) => {
-    res.send("O arquivo foi recebido.")
 })
 
 // Rota 
