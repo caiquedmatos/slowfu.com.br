@@ -174,4 +174,7 @@ form div+div {
     .box-title-banner-home{
         top: 37%;
     }
+    .fotoinicioBlog{
+        height: 80vh;
+    }
 }
