@@ -1,10 +1,15 @@
 {
-  "name": "Slowfood",
+  "name": "slowfu",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "node server.js"
+=======
+    "DevStart": "nodemon index.js",
+    "start": "node index.js"
+>>>>>>> 862127b2d19185dacde0cafe1b403c459b8397e0
   },
   "author": "",
   "license": "ISC",
@@ -19,7 +24,7 @@
     "mysql2": "^2.3.3",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
-    "sequelize": "^6.25.6"
+    "sequelize": "^6.26.0"
   },
   "devDependencies": {
     "dotenv": "^16.0.3",
