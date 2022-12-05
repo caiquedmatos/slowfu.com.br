@@ -171,4 +171,7 @@ form div+div {
     #hr {
         border: none;
     }
+    .box-title-banner-home{
+        top: 37%;
+    }
 }
