@@ -44,3 +44,16 @@
 }
   
   /* Foto Inicio */
+
+
+  @media (max-width: 55em){
+    .box-title-banner-home{
+      top: 15%;
+    }
+    .mapa-do-site {
+      color: #333333;
+      text-align: initial;
+      padding: 2%;
+      margin: 1% 0;
+  }
+  }
