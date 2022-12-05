@@ -637,6 +637,10 @@ footer .logo img {
 .box-social-itens h5 {
 }
 
+.login-mob{
+  display: none;
+}
+
 @media (max-width: 55em) {
   .sub-menu-list:hover .sub-menu-second {
     display: block;
@@ -646,6 +650,9 @@ footer .logo img {
     left: 50%;
     transform: translate(-50%, -50%);
     background: #222;
+}
+.login-mob{
+  display: block;
 }
   .firstMenu {
     display: none;
