@@ -560,10 +560,26 @@ header .logo img {
   width: 100%;
   background: linear-gradient(
     250deg,
-    rgba(166, 210, 170, 1) 0%,
+    #92C47E 0%,
     rgba(190, 223, 153, 1) 51%,
     rgba(228, 233, 134, 1) 100%
   );
+  position: relative;
+  padding: 20px;
+}
+
+.box-bg-footer-blog {
+  width: 100%;
+  background: #6f4ca8;
+  position: relative;
+  padding: 20px;
+}
+
+
+
+.box-bg-footer-faq {
+  width: 100%;
+  background:#f2b01f;
   position: relative;
   padding: 20px;
 }
@@ -634,7 +650,50 @@ footer .logo img {
   transform: translate(-50%, -50%);
 }
 
-.box-social-itens h5 {
+
+/* BLog quem somos */
+
+.box-footer-itens-blog p {
+  line-height: 1.4em;
+  color: #fff;
+}
+
+.box-footer-itens-blog h5 {
+  color: #fff;
+  font-size: 22px;
+  position: relative;
+  margin: 30px 0 50px 0;
+}
+
+.box-footer-itens-blog h5::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background: #fff;
+  bottom: -77%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.box-footer-itens-blog a {
+  color: #fff;
+  line-height: 1.6rem;
+  transition: 0.6s all ease;
+}
+
+.box-footer-itens-blog a:hover {
+  color: #00ae2b;
+  padding-left: 15px;
+}
+
+.box-footer-itens-blog li {
+  transition: 0.6s all ease;
+}
+
+.box-footer-itens-blog li:hover {
+  color: #8c9f91;
+  transition: 0.6s all ease;
 }
 
 .login-mob{
